@@ -204,13 +204,6 @@
     aspect-ratio:16/9;
     border-radius:10px;
   }
-  .grid.video-mode .video-caption{
-    display:block;
-    font-size:12.5px;
-    color:#111;
-    margin-top:6px;
-    line-height:1.3;
-  }
   .grid.video-mode .cell-wrap{
     display:flex;
     flex-direction:column;
@@ -414,8 +407,8 @@
         </div>
         <div class="stats">
           <div class="stat"><b id="statPosts">9</b><span>게시물</span></div>
-          <div class="stat"><b>1,204</b><span>팔로워</span></div>
-          <div class="stat"><b>318</b><span>팔로우</span></div>
+          <div class="stat"><b>1</b><span>팔로워</span></div>
+          <div class="stat"><b>1</b><span>팔로우</span></div>
         </div>
       </div>
       <div class="name-bio">
@@ -499,9 +492,9 @@
      - avatar   : 프로필 사진 URL
   --------------------------------------------------------------------- */
   let profile = {
-    fullname: "eom",
+    fullname: "성현이",
     username: "whereiseom",
-    bio: "@juhoony 거",
+    bio: "@juhoon 이 사람 거",
     avatar: "https://picsum.photos/seed/myavatar/200/200"
   };
 
@@ -534,9 +527,9 @@
      (watch?v=, youtu.be/, shorts/ 형식 모두 인식됩니다)
   --------------------------------------------------------------------- */
   let youtubePosts = [
-    {type:"youtube", src:"https://youtu.be/Dz9TQcPmX1o?si=O6mO4tLVp2EZJp2_", caption:"bbf"},
-    {type:"youtube", src:"https://youtu.be/jh0YLzH1Nk8?si=Cqma68jYYzkqK78s", caption:"♡"},
-    {type:"youtube", src:"https://youtu.be/dktKWcp7PwI?si=hcQIN1I96KLVTIy4", caption:"ㅃ"}
+    {type:"youtube", src:"https://youtu.be/Dz9TQcPmX1o?si=PHWJ9TE8aN1H1lEm", caption:"bbf"},
+    {type:"youtube", src:"https://youtu.be/jh0YLzH1Nk8?si=mAuv-OOSWM5cl1pY", caption:"♡"},
+    {type:"youtube", src:"https://youtu.be/dktKWcp7PwI?si=RZH3Fy_3eVl7ghq5", caption:"ㅃㅃ"}
   ];
 
   /* ---------------------------------------------------------------------
@@ -632,7 +625,6 @@
             <img src="${thumb}" alt="youtube">
             <svg class="yt-badge" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
           </div>
-          <span class="video-caption">${p.caption || ""}</span>
         `;
         wrap.addEventListener('click', ()=> openPostDetail(i));
         grid.appendChild(wrap);
